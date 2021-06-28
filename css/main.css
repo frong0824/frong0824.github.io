@@ -1,5 +1,5 @@
 .banner {
-  height: 100%;
+  height: 55%;
   position: relative;
   overflow: hidden;
   cursor: default;
@@ -8,7 +8,7 @@
 .banner .mask {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 55%;
   background-color: rgba(0,0,0,0.3);
 }
 .banner .page-header {
