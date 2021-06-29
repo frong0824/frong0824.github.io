@@ -185,7 +185,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      964 字
+      1.6k 字
     </span>
   
 
@@ -195,12 +195,20 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      5
+      13
        分钟
     </span>
   
 
   
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-page-views"></span> 次
+      </span>
+    
   
 </div>
 
@@ -314,7 +322,7 @@
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs awk">&lt;http:<span class="hljs-regexp">//</span>localhost:<span class="hljs-number">4000</span><span class="hljs-regexp">/about/</span>&gt;<br>&lt;abcdefg@qq.com&gt;<br></code></pre></td></tr></table></figure>
 
 <p><a target="_blank" rel="noopener" href="http://localhost:4000/about/">http://localhost:4000/about/</a></p>
-<p><a href="mailto:&#97;&#x62;&#99;&#100;&#x65;&#x66;&#x67;&#64;&#113;&#113;&#46;&#x63;&#111;&#109;">&#97;&#x62;&#99;&#100;&#x65;&#x66;&#x67;&#64;&#113;&#113;&#46;&#x63;&#111;&#109;</a></p>
+<p><a href="mailto:&#x61;&#x62;&#99;&#100;&#x65;&#x66;&#x67;&#64;&#113;&#x71;&#46;&#x63;&#111;&#x6d;">&#x61;&#x62;&#99;&#100;&#x65;&#x66;&#x67;&#64;&#113;&#x71;&#46;&#x63;&#111;&#x6d;</a></p>
 <h2 id="11-代码：行内代码"><a href="#11-代码：行内代码" class="headerlink" title="11 代码：行内代码"></a>11 代码：行内代码</h2><p>在第一行后指定编程语言，也可以不指定</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">​``` python<br></code></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-meta">@requires_authorization</span><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">somefunc</span>(<span class="hljs-params">param1=<span class="hljs-string">&#x27;&#x27;</span>, param2=<span class="hljs-number">0</span></span>):</span><br>    <span class="hljs-string">&#x27;&#x27;&#x27;A docstring&#x27;&#x27;&#x27;</span><br>    <span class="hljs-keyword">if</span> param1 &gt; param2: <span class="hljs-comment"># interesting</span><br>        <span class="hljs-built_in">print</span> <span class="hljs-string">&#x27;Greater&#x27;</span><br>    <span class="hljs-keyword">return</span> (param2 - param1 + <span class="hljs-number">1</span>) <span class="hljs-keyword">or</span> <span class="hljs-literal">None</span><br></code></pre></td></tr></table></figure>
@@ -344,10 +352,123 @@
 <h2 id="14-字体设置"><a href="#14-字体设置" class="headerlink" title="14 字体设置"></a>14 字体设置</h2><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs routeros">&lt;font <span class="hljs-attribute">face</span>=<span class="hljs-string">&quot;黑体&quot;</span>&gt;我是黑体字&lt;/font&gt;<br>&lt;font <span class="hljs-attribute">face</span>=<span class="hljs-string">&quot;微软雅黑&quot;</span>&gt;我是微软雅黑&lt;/font&gt;<br>&lt;font <span class="hljs-attribute">face</span>=<span class="hljs-string">&quot;STCAIYUN&quot;</span>&gt;我是华文彩云&lt;/font&gt;<br>&lt;font <span class="hljs-attribute">color</span>=#0099ff <span class="hljs-attribute">size</span>=12 <span class="hljs-attribute">face</span>=<span class="hljs-string">&quot;黑体&quot;</span>&gt;黑体&lt;/font&gt;<br>&lt;font <span class="hljs-attribute">color</span>=gray <span class="hljs-attribute">size</span>=5&gt;gray&lt;/font&gt;<br></code></pre></td></tr></table></figure>
 
 <p><font face="黑体">我是黑体字</font><br><font face="微软雅黑">我是微软雅黑</font><br><font face="STCAIYUN">我是华文彩云</font><br><font color="#0099ff" size="5" face="黑体">变色变大的黑体</font><br><font color="gray" size="5">变灰gray</font></p>
+<h2 id="Tag插件-配合Fluid主题"><a href="#Tag插件-配合Fluid主题" class="headerlink" title="Tag插件 -配合Fluid主题"></a>Tag插件 -配合Fluid主题</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs markdown">&#123;% note success %&#125;<br>文字 或者 <span class="hljs-code">`markdown`</span> 均可<br>&#123;% endnote %&#125;<br></code></pre></td></tr></table></figure>
+
+<div class="note note-success">
+            <p>文字 或者 <code>markdown</code> 均可</p>
+          </div>
+
+<div class="note note-secondary">
+            <p>secondary</p>
+          </div>
+
+<div class="note note-danger">
+            <p>danger</p>
+          </div>
+
+<div class="note note-warning">
+            <p>warning</p>
+          </div>
+
+<div class="note note-info">
+            <p>info</p>
+          </div>
+
+
+
+<h2 id="勾选框"><a href="#勾选框" class="headerlink" title="勾选框"></a>勾选框</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">&#123;% cb text, checked?, incline? %&#125;<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>  text：显示的文字</li>
+<li>  checked：默认是否已勾选，默认 false</li>
+<li>  incline: 是否内联（可以理解为后面的文字是否换行），默认 false</li>
+</ul>
+ <div>
+            <input type="checkbox" disabled>普通示例
+          </div> 
+
+ <div>
+            <input type="checkbox" disabled checked="checked">默认选中
+          </div> 
+
+ 
+            <input type="checkbox" disabled>内联示例
+           后面文字不换行<br> 
+
+ <input type="checkbox" disabled> 也可以只传入一个参数，文字写在后边（这样不支持外联） 
+
+
+
+<h2 id="组图"><a href="#组图" class="headerlink" title="组图"></a>组图</h2><p>如果想把多张图片按一定布局组合显示，你可以在 markdown 中按如下格式：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs markdown">&#123;% gi total n1-n2-... %&#125;<br>  ![](url)<br>  ![](url)<br>  ![](url)<br>  ![](url)<br>  ![](url)<br>&#123;% endgi %&#125;<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>  total：图片总数量，对应中间包含的图片 url 数量</li>
+<li>  n1-n2-…：每行的图片数量，可以省略，默认单行最多 3 张图，求和必须相等于 total，否则按默认样式</li>
+<li>  如下图为 <code>&#123;% gi 5 3-2 %&#125;</code> 示例，代表共 5 张图，第一行 3 张图，第二行 2 张图。 </li>
+</ul>
+<p><img src="/2021/06/29/Markdown-%E8%AF%AD%E6%B3%95%E9%9B%86/1.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="LaTeX-数学公式"><a href="#LaTeX-数学公式" class="headerlink" title="LaTeX 数学公式"></a>LaTeX 数学公式</h2><div class="note note-success">
+            <p>TIP</p><p> Hexo 5.0 以上，可尝试 Hexo 官方的 <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-math">hexo-math (opens new window)</a>插件，支持更多定制化参数，使用方式参照仓库内的文档，以下介绍的是主题内置的 LaTeX 功能。 </p>
+          </div>
+
+<p> 当需要使用 <a target="_blank" rel="noopener" href="https://www.latex-project.org/help/documentation/">LaTeX (opens new window)</a>语法的数学公式时，可手动开启本功能，需要完成三步操作： </p>
+<p> <strong>1. 设置主题配置</strong></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">post:</span><br>  <span class="hljs-attr">math:</span><br>    <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>    <span class="hljs-attr">specific:</span> <span class="hljs-literal">false</span><br>    <span class="hljs-attr">engine:</span> <span class="hljs-string">mathjax</span><br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>  <code>specific</code>: 建议开启。当为 true 时，只有在文章 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter">Front-matter (opens new window)</a>里指定 <code>math: true</code> 才会在文章页启动公式转换，以便在页面不包含公式时提高加载速度。</li>
+<li>  <code>engine</code>: 公式渲染引擎，目前支持 <code>mathjax</code> 或 <code>katex</code>。 </li>
+</ul>
+<p><strong>2. 更换 Markdown 渲染器</strong></p>
+<p>由于 Hexo 默认的 Markdown 渲染器不支持复杂公式，所以必须更换渲染器。</p>
+<p>先卸载原有渲染器：</p>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ada">npm uninstall hexo-renderer-marked <span class="hljs-comment">--save</span><br></code></pre></td></tr></table></figure>
+
+<p>然后根据上方配置不同的 <code>engine</code>，推荐更换如下渲染器：</p>
+<p>mathjax: <code>npm install hexo-renderer-kramed --save</code></p>
+<p>katex: <code>npm install @upupming/hexo-renderer-markdown-it-plus --save</code></p>
+<p><strong>3. 安装完成后执行 <code>hexo clean</code></strong></p>
+<p>书写公式的格式：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs markdown">$$<br>E=mc^2<br>$$<br></code></pre></td></tr></table></figure>
+
+<div class="note note-warning">
+            <p>WARNING</p><p>不可同时安装多个渲染器，如果更换公式引擎，对应渲染器也要一并更换。</p><p>如果公式没有被正确渲染，请仔细检查是否符合上面三步操作。</p><p>另外不同的渲染器，可能会导致一些 Markdown 语法不支持。</p><p>自定义页面默认不加载渲染，如需使用，需在 Front-matter 中指定 <code>math: true</code></p>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><br><br></p>
 <blockquote>
-<p>  参考网站 ——</p>
+<p>  参考网站 </p>
 <blockquote>
 <p>  <a target="_blank" rel="noopener" href="https://blog.csdn.net/qcx321/article/details/53780672">https://blog.csdn.net/qcx321/article/details/53780672</a></p>
+<p>  <a target="_blank" rel="noopener" href="https://fluid-dev.github.io/hexo-fluid-docs/guide/">https://fluid-dev.github.io/hexo-fluid-docs/guide/</a></p>
 </blockquote>
 </blockquote>
 
@@ -356,11 +477,18 @@
             <div>
               <div class="post-metas mb-3">
                 
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Toolsets/">Toolsets</a>
+                    
+                  </div>
+                
                 
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/Toolsets/">Toolsets</a>
+                      <a class="hover-with-bg" href="/tags/Markdown/">Markdown</a>
                     
                   </div>
                 
