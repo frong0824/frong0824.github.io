@@ -18,7 +18,7 @@
   <meta name="author" content="fanrong">
   <meta name="keywords" content="">
   
-  <title>Argo数据记录 - 努力站上巨人的肩膀</title>
+  <title>Conda常用记录 - 努力站上巨人的肩膀</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -163,7 +163,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Argo数据记录">
+            <span class="h2" id="subtitle" title="Conda常用记录">
               
             </span>
 
@@ -173,8 +173,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-07-01 00:06" pubdate>
-        2021年7月1日 凌晨
+      <time datetime="2021-07-14 16:28" pubdate>
+        2021年7月14日 下午
       </time>
     </span>
   
@@ -185,7 +185,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      55 字
+      401 字
     </span>
   
 
@@ -195,7 +195,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      3
        分钟
     </span>
   
@@ -233,16 +233,37 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Argo数据记录</h1>
+            <h1 style="display: none">Conda常用记录</h1>
             
             <div class="markdown-body">
-              <p>建党一百周年</p>
-<p>今天是建档一百周年</p>
-<p>数据说明地址：</p>
-<p><a target="_blank" rel="noopener" href="https://argo.ucsd.edu/data/data-from-gdacs/">https://argo.ucsd.edu/data/data-from-gdacs/</a></p>
-<p><a target="_blank" rel="noopener" href="http://www.argodatamgt.org/Access-to-data/Argo-GDAC-ftp-and-https-servers">http://www.argodatamgt.org/Access-to-data/Argo-GDAC-ftp-and-https-servers</a></p>
-<p>数据下载地址：</p>
-<p><a target="_blank" rel="noopener" href="https://data-argo.ifremer.fr/dac/csio/">https://data-argo.ifremer.fr/dac/csio/</a></p>
+              <h2 id="Conda常用记录"><a href="#Conda常用记录" class="headerlink" title="Conda常用记录"></a>Conda常用记录</h2><h3 id="1-创建新环境"><a href="#1-创建新环境" class="headerlink" title="1.  创建新环境"></a>1.  创建新环境</h3><p> conda create -n env_name package_name </p>
+<p>#创建名为env_name的新环境，并在该环境下安装名为package_name 的包.</p>
+<p>可以指定新环境的版本号，例如：</p>
+<p>conda create -n py2env python=2.7 numpy pandas</p>
+<p>创建了python2环境，python版本为2.7，同时还安装了numpy pandas包   </p>
+<h3 id="2-删除环境"><a href="#2-删除环境" class="headerlink" title="2.   删除环境"></a>2.   删除环境</h3><p> conda remove –name env_name –all  </p>
+<p>\1. conda –version #查看conda版本，验证是否安装</p>
+<p>\2. conda update conda #更新至最新版本，也会更新其它相关包</p>
+<p>\3. conda update –all #更新所有包</p>
+<p>\4. conda update package_name #更新指定的包</p>
+<p>\5. conda create -n env_name package_name #创建名为env_name的新环境，并在该环境下安装名为package_name 的包，可以指定新环境的版本号，例如：conda create -n python2 python=python2.7 numpy pandas，创建了python2环境，python版本为2.7，同时还安装了numpy pandas包</p>
+<p>\6. source activate env_name #切换至env_name环境</p>
+<p>\7. source deactivate #退出环境</p>
+<p>\8. conda info -e #显示所有已经创建的环境</p>
+<p>\9. conda create –name new_env_name –clone old_env_name #复制old_env_name为new_env_name</p>
+<p>\10. conda remove –name env_name –all #删除环境</p>
+<p>\11. conda list #查看所有已经安装的包</p>
+<p>\12. conda install package_name #在当前环境中安装包</p>
+<p>\13. conda install –name env_name package_name #在指定环境中安装包</p>
+<p>\14. conda remove – name env_name package #删除指定环境中的包</p>
+<p>\15. conda remove package #删除当前环境中的包</p>
+<p>\16. conda create -n tensorflow_env tensorflow</p>
+<p>conda activate tensorflow_env #conda 安装tensorflow的CPU版本</p>
+<p>\17. conda create -n tensorflow_gpuenv tensorflow-gpu</p>
+<p>conda activate tensorflow_gpuenv #conda安装tensorflow的GPU版本</p>
+<p>\18. conda env remove -n env_name #采用第10条的方法删除环境失败时，可采用这种方法</p>
+<p>Refer:</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/67745160">https://zhuanlan.zhihu.com/p/67745160</a></p>
 
             </div>
             <hr>
@@ -252,7 +273,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/Research/">Research</a>
+                      <a class="hover-with-bg" href="/categories/Toolsets/">Toolsets</a>
                     
                   </div>
                 
@@ -260,7 +281,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/Argo%E6%95%B0%E6%8D%AE/">Argo数据</a>
+                      <a class="hover-with-bg" href="/tags/Conda%E5%B9%B3%E5%8F%B0/">Conda平台</a>
                     
                   </div>
                 
@@ -277,9 +298,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/07/14/Conda%E5%B8%B8%E7%94%A8%E8%AE%B0%E5%BD%95/">
+                      <a href="/2021/12/21/%E8%BD%AF%E4%BB%B6%E5%B0%8F%E6%8A%80%E5%B7%A7%E5%90%88%E9%9B%86/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Conda常用记录</span>
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -287,8 +308,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/06/30/%E6%B4%8B%E6%B5%81%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95%E5%90%88%E9%9B%86/">
-                        <span class="hidden-mobile">洋流分析计算方法合集</span>
+                      <a href="/2021/07/01/Argo%E6%95%B0%E6%8D%AE%E8%AE%B0%E5%BD%95/">
+                        <span class="hidden-mobile">Argo数据记录</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
